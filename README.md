@@ -30,8 +30,6 @@ Here is my exam prep resources.
 
 ## Chapters and useful links
 
-![chapters](pictures\chapters.png)
-
 [Change as of 28th of July 2023:](https://learn.microsoft.com/en-us/certifications/resources/study-guides/az-104#change-log)
 
 ![image.png](/pictures/image-92392fbd-908f-493f-bee6-eb104f13cefb.png)
