@@ -529,7 +529,7 @@ _**Note: in Powerhell we use New to create objects, Add to add object or propert
 
   - Azure DNS service overview [Pluralsight](https://app.pluralsight.com/course-player?clipId=370389f2-ba77-446b-b4ab-895fbe14a2aa)
 
-    ![DNS-zones](pictures\DNS-zones.png)
+    ![DNS-zones](pictures/DNS-zones.png)
     ![image.png](/pictures/image-54071c52-3bfe-4f27-8045-459f87487ebb.png)
 
   - Azure DNS Public zones [Pluralsight](https://app.pluralsight.com/course-player?clipId=65ce33fc-6775-4137-8534-7ce7b442c7db) [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-dns/4-create-zones) 
@@ -545,7 +545,7 @@ _**Note: in Powerhell we use New to create objects, Add to add object or propert
 
     - Private DNS zones scenarios [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-dns/8-determine-private-zone-scenarios)
 
-      ![DNS-zones](pictures\private-domains.png)
+      ![DNS-zones](pictures/private-domains.png)
 
   - Bonus: Powershel and CLI for DNS [Pluralsight](https://app.pluralsight.com/course-player?clipId=3f9e09e4-b9ae-4c9b-80c0-37df5ef00a6b) 
 ![image.png](/pictures/image-87362e31-5821-4a91-b597-fee5275c747e.png)
@@ -559,7 +559,7 @@ _**Note: in Powerhell we use New to create objects, Add to add object or propert
 
   - Azure Service Tags [Pluralsight](https://app.pluralsight.com/course-player?clipId=e9aa3ea1-cc07-405b-b8fd-fde0d7500839) [Doc](https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview) *(In short: Service Tags allow us to set IPs of Azure services and those IPs are updated by Microsoft)*
 
-    ![service_tags](pictures\service_tags.png)
+    ![service_tags](pictures/service_tags.png)
 ![image.png](/pictures/image-72402376-2c51-4997-9623-c789d8ead957.png)
 
   - ASGs [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-network-security-groups/6-implement-asgs)
@@ -570,11 +570,11 @@ _**Note: in Powerhell we use New to create objects, Add to add object or propert
 
   - NSGs rules [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-network-security-groups/3-determine-network-security-groups-rules) 
 
-    ![NSG rules](pictures\nsg-rules.png)
+    ![NSG rules](pictures/nsg-rules.png)
 
   - Determine effective rules [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-network-security-groups/4-determine-network-security-groups-effective-rules) 
 
-    ![NSG rules](pictures\nsg-effective-rules.png)
+    ![NSG rules](pictures/nsg-effective-rules.png)
 
   - Azure Firewall [Pluralsight](https://app.pluralsight.com/course-player?clipId=3b59afc3-2b10-4bda-8972-12ec48b413a0) [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-firewall/2-determine-uses?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-virtual-networks) *(Note: Azure NSGs do only IP, port number and protocol and Azure firewall can do more such as DNS)*
 
@@ -610,13 +610,13 @@ _**Note: in Powerhell we use New to create objects, Add to add object or propert
 
   - App Gateway vs Azure Load balancer [Pluralsight](https://app.pluralsight.com/course-player?clipId=9410dc24-712c-4601-a450-397fce42c8c2) _(General case: if we use HTTP or HTTPS, Azure Application Gateway is probably a better option. In any other case, Azure Load Balancer will be used | SSL offload means that the App Gateway handles SSL certificates instead of the backend VMs )_
 
-    ![gateway-vs-balancer](pictures\gateway-vs-balancer.png)
+    ![gateway-vs-balancer](pictures/gateway-vs-balancer.png)
 Example of architecture with both + Traffic Manager: _(Note: Azure Front Door is basically an abstraction layer for Traffic Manager + App Gateway together)_
 ![image.png](/pictures/image-08d67341-410e-4fe8-8cfe-1437f916a67e.png)
 
   - App Gateway components [Pluralsight](https://app.pluralsight.com/course-player?clipId=ca082b60-26a4-436f-8409-5b40d107bc18) [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-application-gateway/4-app-gateway-components) _(note: while the load balancer was limited to VMs in a VNET, App Gateway can redirect to any IP | We can do session affinity | The front end IP can be set behind a DNS to be accessed aswell)_ 
 
-    ![app-gateway-traffic](pictures\app-gateway-traffic.png)
+    ![app-gateway-traffic](pictures/app-gateway-traffic.png)
 
   - App Gateway routing [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-application-gateway/3-determine-routing) *(Path-based (= /image/\* for example) & Multi-site (= multiples sites/DNS routes to the same front end ip and the App Gateway map to a different Backend))*
 
@@ -637,7 +637,7 @@ Example of architecture with both + Traffic Manager: _(Note: Azure Front Door is
 <IMG  src="https://learn.microsoft.com/en-us/training/modules/improve-app-scalability-resiliency-with-load-balancer/media/2-load-balancer-distribution.svg"  alt="Screenshot showing an overview of Azure Load Balancer."/>
 
   - Load balancer SKUs [Pluralsight](https://app.pluralsight.com/course-player?clipId=1a99ddcf-783f-4e42-abed-fe2d1b654f05) [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-load-balancer/5-determine-skus) _(Note: The Public IP also needs to be Standard in a Standard Scenario | General rules: For the exam the Basic is only used if resources are in an vailability set, any other scenario is Standard)_
-   ![load-balancer-sku](pictures\load-balancer-sku.png)
+   ![load-balancer-sku](pictures/load-balancer-sku.png)
 
   - Create back-end pools [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-load-balancer/6-create-backend-pools)
 
@@ -1106,9 +1106,9 @@ https://learn.microsoft.com/en-us/azure/app-service/manage-backup?tabs=portal#co
 
   - Azure VPN Gateway uses [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-vpn-gateway/2-determine-uses)
 
-    ![virtual-gateways](pictures\virtual-gateways.png)
+    ![virtual-gateways](pictures/virtual-gateways.png)
 
-    ![VPN](pictures\VPN-scenario.png)
+    ![VPN](pictures/VPN-scenario.png)
 
   - Site-to-site VPN [Pluralsight](https://app.pluralsight.com/course-player?clipId=8dd0b2ca-bc74-4a48-b44d-e5e17e10778f) [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-vpn-gateway/3-create-site-to-site-connections) & components [Pluralsight](https://app.pluralsight.com/course-player?clipId=f357582f-0745-4a43-9e50-cb9945e371e1) & demo [Pluralsight](https://app.pluralsight.com/course-player?clipId=e1291b8f-ae46-4a19-a646-c1349ab1cfd4)
 
@@ -1122,7 +1122,7 @@ https://learn.microsoft.com/en-us/azure/app-service/manage-backup?tabs=portal#co
 
     - Step 7 create the VPN connection [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-vpn-gateway/10-create-vpn-connection) & verify [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-vpn-gateway/11-determine-high-availability-scenarios)
 
-    ![S2S-steps](pictures\S2S-steps.png)
+    ![S2S-steps](pictures/S2S-steps.png)
 
   - VNET-to-VNET VPN [Pluralsight](https://app.pluralsight.com/course-player?clipId=a472f77a-b639-43c7-8ee7-ce699677da09) 
 
@@ -1130,7 +1130,7 @@ https://learn.microsoft.com/en-us/azure/app-service/manage-backup?tabs=portal#co
 
   - Azure ExpressRoute [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-expressroute-virtual-wan/2-determine-expressroute-uses?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-virtual-networks) [Pluralsight](https://app.pluralsight.com/course-player?clipId=ea9ad06b-ba17-42ed-abf2-dc92a17d8196)
 
-    ![express route](pictures\express-route.png)
+    ![express route](pictures/express-route.png)
 
   - Compare intersite connection options *(P2S, S2S & ExpressRoute)* [Azure learn](https://learn.microsoft.com/en-us/training/modules/configure-expressroute-virtual-wan/5-compare-intersite-connection-options) [Pluralsight](https://app.pluralsight.com/course-player?clipId=6ffabb05-d206-4635-ba20-d1d44cb76f7c)
 
